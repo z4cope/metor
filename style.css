@@ -1,0 +1,317 @@
+body {
+  background-color: hsl(229, 57%, 11%);
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  color: white;
+}
+
+#king-container {
+  text-align: center;
+  padding-top: 220px;
+  padding-left: 150px;
+  position: relative;
+  z-index: 2;
+}
+
+.fylo, .usage {
+  background-color: hsl(228, 56%, 26%);
+}
+
+.fylo {
+  border-radius: 10px 100px 10px 10px;
+  padding: 40px 40px;
+  text-align: left;
+  margin-right: 25px;
+}
+
+.fylo-logo {
+  padding-bottom: 40px;
+}
+
+.icon-bg .doc {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 8px;
+  padding: 10px 12px 13px 12px;
+  margin-right: 15px;
+}
+
+.icon-bg .folder {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 8px;
+  padding: 10px 12px 13px 12px;
+  margin-right: 15px;
+}
+
+.icon-bg .upload {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 8px;
+  padding: 10px 12px 13px 12px;
+  margin-right: 15px;
+}
+
+.usage {
+  margin-top: 40px;
+  padding: 40px 40px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.usage-text {
+  color: #fff;
+  font-weight: 100;
+}
+
+.usage-num {
+  font-weight: 700;
+}
+
+.talk-bubble {
+  display: inline;
+  position: relative;
+  width: 150px;
+  background-color: white;
+  float: right;
+  border-radius: 10px 10px 0 10px;
+  margin-top: -80px;
+}
+
+.talktext p {
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding: 5px 0;
+}
+
+.gb {
+  color: hsl(229, 7%, 55%);
+  font-size: 0.6rem;
+}
+
+.tri-right.border.btm-right:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: -8px;
+  bottom: -40px;
+  border: 20px solid;
+  border-color: #666 #666 transparent transparent;
+}
+
+.tri-right.btm-right:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 0px;
+  bottom: -20px;
+  border: 12px solid;
+  border-color: lightyellow lightyellow transparent transparent;
+}
+
+/* .range-container {
+  width: 100%;
+}
+
+#range {
+  -webkit-appearance: none;
+  width: 105%;
+  height: 20px;
+  outline: none;
+  border-radius: 50px;
+  background-color: hsl(229, 57%, 11%);
+}
+
+#range::-moz-range-thumb {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+  right: 10px;
+}
+
+#selector {
+  height:  104px;
+  width: 48px;
+  position: absolute;
+  bottom: -20px;
+  left: 70%;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+
+
+#progressBar {
+  width: 70%;
+  height: 12px;
+  background: linear-gradient(to left, hsl(335, 100%, 65%), hsl(6, 100%, 80%));
+  border-radius: 50px;
+  position: relative;
+  bottom: 22.5px;
+  left: 5px;
+} */
+
+.slidecontainer {
+  width: 100%;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 50px;
+  height: 22px;
+  margin-top: 15px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 16px;
+  background: linear-gradient(to left,hsl(335, 100%, 65%), hsl(6, 100%, 80%));
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 50px;
+  margin: 2.5px 0 2px 4px;
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.gbs {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.max-gb {
+  float: right;
+  margin-top: 2px;
+}
+
+.bot-img {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  #king-container {
+    padding-top: 100px;
+    padding-left: 0;
+  }
+
+  .fylo {
+    margin-bottom: 50px;
+  }
+
+  .usage {
+    width: 97%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #king-container {
+    padding: 10% 0 10% 20%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .fylo {
+    margin-bottom: 50px;
+    width: 80%;
+    margin-bottom: 0;
+  }
+
+  .usage {
+    margin-top: 20px;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-image: url("images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bot-img {
+    visibility: hidden;
+  }
+
+  #king-container {
+    padding: 25% 0 5% 10%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .fylo {
+    margin-bottom: 50px;
+    width: 90%;
+    margin-bottom: 0;
+  }
+
+  .usage {
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .usage .usage-text {
+    text-align: center;
+    margin-left: 5px;
+  }
+
+  .usage-text {
+    font-size: 0.9rem;
+  }
+
+  .talk-bubble {
+    position: absolute;
+    left: 80px;
+    top: 220px;
+    border-radius: 10px;
+    float: unset !important;
+    width: 170px;
+  }
+
+  .talktext p {
+    font-size: 2.5rem;
+  }
+
+  .tri-right.btm-right:after {
+    border: none;
+  }
+
+  .slidecontainer {
+    margin-bottom: 5px;
+  }
+
+  .max-gbs {
+    margin-top: 6px;
+  }
+
+  .slider::-webkit-slider-thumb {
+    height: 12px;
+    width: 12px;
+    margin-top: 0.6px;
+  }
+
+  
+}
